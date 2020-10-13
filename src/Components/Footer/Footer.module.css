@@ -1,0 +1,17 @@
+body{
+    position: relative
+}
+.MainConatiner{
+    background-color: #172146;
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    padding: 80px 16%;
+    width: 100%;
+    margin: auto 0 0 0;
+}
+.footerHead{
+
+}
