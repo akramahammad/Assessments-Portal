@@ -1,0 +1,30 @@
+.MainDiv {
+    border: 1px solid #DEE2E6;
+    width: 65%;
+    margin: 7% auto;
+    border-radius: 6px;
+    box-shadow: 0 0 4px 1.5px #E3E6EB;
+    background-color: #fff;
+    padding: 3% 5%;
+    color: #212529;
+    box-sizing: border-box;
+}
+
+.PlanHeading {
+    color: #212529;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+.MainDiv p {
+    margin: 10px;
+}
+
+.MainDiv h1 {
+    margin: 0px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
