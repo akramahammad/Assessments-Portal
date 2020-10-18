@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
     z-index: 90;
     font-family: Open Sans, sans-serif;
+
 }
 
 nav {
@@ -48,6 +49,7 @@ h3 {
 .innerContainer {
     display: flex;
     align-items: center;
+    
 }
 
 .infoContainer {
