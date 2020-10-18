@@ -15,3 +15,13 @@
     height: 100vh;
     border: none
 }
+
+@media(max-width:600px) {
+    .RecordingDiv {
+        width: 95%;
+        margin-top: 20%;
+    }
+    .RecordingPlayer {
+        max-height: 50vh;
+    }
+}

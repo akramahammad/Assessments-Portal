@@ -48,3 +48,9 @@
     overflow: hidden;
     transition: all 200ms;
 }
+
+@media(max-width:600px) {
+    .SessionMainDiv {
+        margin-bottom: 10px;
+    }
+}

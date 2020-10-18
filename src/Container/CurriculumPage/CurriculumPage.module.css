@@ -171,3 +171,25 @@
     font-weight: 700;
     color: rgba(0, 0, 0, 0.7);
 }
+
+@media(max-width:600px) {
+    .Main {
+        width: 95%;
+        margin-top: 20%;
+    }
+    .UnitsMainDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .LeftSection,
+    .RightSection {
+        width: 100%;
+        margin: 3% 0;
+    }
+    .CourseDetailsDiv,
+    .ModuleSection {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+}

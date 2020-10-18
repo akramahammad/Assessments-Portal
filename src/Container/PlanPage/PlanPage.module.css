@@ -28,3 +28,20 @@
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
 }
+
+@media(max-width:600px) {
+    .MainDiv {
+        width: 95%;
+        margin-top: 20%;
+    }
+    .MainDiv p {
+        word-break: break-all;
+    }
+    .MainDiv h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .PlanHeading {
+        margin-top: 30px;
+    }
+}
