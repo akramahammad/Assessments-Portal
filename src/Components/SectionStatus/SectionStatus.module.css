@@ -1,0 +1,52 @@
+body{
+ padding-top: 60px ;
+}
+
+.innerDiv{
+ width: 1200px;
+ background-color: #fff;
+ margin: 0;
+ padding: 12px 20px;
+ 
+}
+.statusDiv{
+    margin:  0;
+    color: rgba(0,0,0,0.7);
+    text-transform: capitalize;
+    display: flex;
+    padding: 30px;
+    max-height: 50px;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 1px solid #e8ebf2;
+}
+.TopicName{
+    font-size: 19px;
+    font-weight: 700;
+    font-family: Raleway,sans-serif;
+    padding-right: 8px;
+}
+.statusDiv > div{
+    display: flex;  
+    width : 100%;
+}
+.showStatus{
+    font-size: 19px;
+    font-weight: 700;
+    font-family: Raleway,sans-serif;
+    padding-right: 8px;
+     color: #cc0000;
+}
+.linkDesign{
+    text-decoration: none;
+}
+
+@media(max-width:900px){
+    .statusDiv{
+        
+        padding:12px;
+    }
+    .statusDiv p {
+        font-size: 18px;
+    }
+}

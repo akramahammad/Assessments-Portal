@@ -1,0 +1,83 @@
+.ProblemInfo{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    border-radius: 15px;
+    border: 1px solid #0095FF;
+    justify-content: space-between;
+    font-family: Roboto;
+    margin:2% 8%;
+    border-radius: 5px;
+    border: 2px solid #0095FF;
+    color: black;
+    height: 75px;
+    cursor: pointer;
+} 
+.probNum{
+    background-color: #0095FF;
+    padding: 1rem;
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 18px;
+}
+.probStatus{
+    padding: 5px 10px;
+    width: auto;
+    border: 2px solid #007bff;
+    color: #007bff;
+    font-size: 16px;
+    margin-right: 25px;
+    font-style:italic;
+ 
+}
+.probDetail{
+    text-align: left;
+    margin:0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.FlexDiv{
+    display: flex;
+    align-items: center;
+   
+}
+.innerDiv{
+    margin: 0;
+    width:65%;
+    text-align:left 
+}
+.innerDiv p{
+    margin: 0;
+}
+.FlexDiv  p{
+    padding-right:8px;
+}
+@media(max-width: 900px){
+    body{
+        box-sizing: border-box;
+    }
+    .ProblemInfo{
+        margin: 15px 30px;
+        height:65px;
+        box-sizing: border-box;
+        width: 90%;
+    }
+    .FlexDiv  p{
+        padding:0;
+    }
+    .probStatus{
+        margin: 8px;
+    }
+    .innerDiv{
+        padding-left: 5px;
+        font-size: 15px;
+    }
+}

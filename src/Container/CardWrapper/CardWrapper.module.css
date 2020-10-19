@@ -1,0 +1,25 @@
+.mainHead{
+    font-weight: 500;
+    font-size: 40px;
+    color: rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.Container{
+    padding: 3% 8%;
+     box-sizing: border-box;
+}
+.skills{
+    margin: 10px 0;
+    font-family: Roboto,sans-serif;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.flexDiv{
+    display: flex;
+    box-sizing: border-box;
+    width:100%;
+    flex-wrap: wrap;
+}
