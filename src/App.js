@@ -1,6 +1,4 @@
 import React from 'react';
-import classes from "./App.module.css";
-import { BrowserRouter ,Route, Switch  } from "react-router-dom";
 import ProblemPage from "./Container/ProblemPage/ProblemPage";
 import SectionStatus from './Components/SectionStatus/SectionStatus';
 import TopBar from "./Components/TopBar/TopBar";
@@ -9,6 +7,12 @@ import CourseCard from "./Components/CourseCard/CourseCard";
 import CourseInfoPage from "./Container/CourseInfoPage/CourseInfoPage";
 import CardWrapper from "./Container/CardWrapper/CardWrapper";
 import axios from 'axios';
+import CurriculumPage from './Container/CurriculumPage/CurriculumPage';
+import classes from './App.module.css'
+import {BrowserRouter,Route,Switch} from 'react-router-dom'
+import PlanPage from './Container/PlanPage/PlanPage';
+import RecordingPage from './Container/RecordingPage/RecordingPage';
+
 
 class App extends React.Component {
   state = {
@@ -29,13 +33,18 @@ class App extends React.Component {
   }
   render(){
   return (
+
       <div>   
       <BrowserRouter>  
           <TopBar/>
-         
+         <Switch>
                <Route exact path = "/" component ={CardWrapper} />
                <Route exact path = "/CourseStatus" component ={CourseInfoPage} />
                <Route exact path = "/problem" component ={ProblemPage} />
+                <Route excat path="/module/plan/:id" component={PlanPage}/>
+               <Route exact path="/module/recording/:id" component={RecordingPage}/>
+                <Route exact path="/curriculam" component={CurriculumPage}/>
+                </Switch>
             <Footer/>
          </BrowserRouter> 
       </div>

@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    
 }
 .TopContainer{
     width: 100%;
@@ -13,11 +13,12 @@ body{
     left: 0;
     display: flex;
     align-items: center;
-    flex-direction: columns;
     justify-content: space-between;
     box-sizing: border-box;
     z-index: 90;
     font-family: Open Sans,sans-serif;
+    margin-bottom: 15%;
+  
 }
 nav{
     display: flex;
@@ -94,6 +95,25 @@ h3{
         background-color: white;
         border-radius: 8px;
    }
+   .sideBar{
+       position: absolute;
+       background: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -300px;
+    height: 100%;
+    width: 300px;
+    z-index: 92;
+    transition: all linear 0.22s;
+    
+   }
+   .sideBar p{
+           padding: 0 0 24px 14px;
+         text-transform: capitalize;
+        font-family: Open Sans,sans-serif;
+        color: black;
+   }
     hr{
         width: 100%;
         color: #E8EBF2;
@@ -114,11 +134,10 @@ h3{
    .dropdown:hover .AdminDropDown{
        display: block;
    }
-   .linkDesign{
-       text-decoration: none;
-       color: black;
-   }
-  
+  .linkDesign{
+      text-decoration: none;
+      color: black;
+  }
    @media (max-width:950px){
        nav{
            display: none;
@@ -130,6 +149,7 @@ h3{
            display: block;
            cursor: pointer;
        }
-        
+        .MenuBar:hover .sideBar{
+         display: block;
     }
-   
+   }
