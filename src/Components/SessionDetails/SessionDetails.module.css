@@ -1,0 +1,56 @@
+.SessionMainDiv {
+    border: 1px solid #DEE2E6;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 1.5px #E3E6EB;
+    background-color: #fff;
+    padding: 3.5%;
+    color: #212529;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.SessionDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 1% 0;
+}
+
+.InactiveArrow {
+    transform: rotate(90deg);
+    transition: all 200ms;
+}
+
+.ActiveArrow {
+    transform: rotate(-90deg);
+    transition: all 200ms;
+}
+
+.Link {
+    margin-top: 20px;
+    max-height: 100px;
+    transition: all 200ms;
+}
+
+.Link a,
+.None a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.None {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 200ms;
+}
+
+@media(max-width:600px) {
+    .SessionMainDiv {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,195 @@
+.Main {
+    width: 65%;
+    margin: 6% auto;
+}
+
+.None {
+    display: none;
+}
+
+.NavigationPanel {
+    display: flex;
+    border-bottom: 0.5px solid #E3E6EB;
+    margin-bottom: 20px;
+}
+
+.NavigationItem {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0.5px solid #F2F6FF;
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.Active {
+    background-color: #fff;
+    border: 0.5px solid #E3E6EB;
+    border-bottom: none;
+}
+
+.NavigationItem:hover {
+    border: 0.5px solid #E3E6EB;
+    border-bottom: none;
+}
+
+.UnitsMainDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LeftSection {
+    width: 30%;
+}
+
+.CourseDetailsDiv {
+    width: 70%;
+    border: 1px solid #DEE2E6;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 1.5px #E3E6EB;
+    background-color: #fff;
+    padding: 10%;
+}
+
+.CourseDetailsDiv img {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.CourseImageDiv {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.CourseImageDiv p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.StudentSummary>span {
+    font-size: 14px;
+}
+
+.StudentSummary>span:first-child {
+    font-weight: 700;
+    color: #212529;
+}
+
+.ModuleSection {
+    width: 70%;
+    margin-top: 30px;
+    border: 1px solid #DEE2E6;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 1.5px #E3E6EB;
+    background-color: #fff;
+    padding: 10%;
+}
+
+.ModuleSection p:first-child {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #212529;
+    margin: 0
+}
+
+.ModuleSection p:last-child {
+    color: #0096ff;
+    font-size: 17px;
+    margin-bottom: 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.RightSection {
+    width: 68%;
+}
+
+.GradesMainDiv {
+    border: 1px solid #DEE2E6;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 1.5px #E3E6EB;
+    background-color: #fff;
+    padding: 4%;
+}
+
+.ContentDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ContentDiv>div:first-child {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.ContentDiv img {
+    width: 100%;
+}
+
+.CourseHeading {
+    color: #0096ff;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: .4px;
+}
+
+.StudentInfoDiv {
+    display: flex;
+}
+
+.StudentInfo {
+    margin: 0 10px;
+}
+
+.StudentInfo>p:first-child {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 25px 0 5px 0;
+}
+
+.StudentInfo>p:last-child {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.NoTopic {
+    font-size: 19px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+@media(max-width:600px) {
+    .Main {
+        width: 95%;
+        margin-top: 20%;
+    }
+    .UnitsMainDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .LeftSection,
+    .RightSection {
+        width: 100%;
+        margin: 3% 0;
+    }
+    .CourseDetailsDiv,
+    .ModuleSection {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+}
