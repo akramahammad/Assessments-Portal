@@ -1,0 +1,155 @@
+body{
+    
+}
+.TopContainer{
+    width: 100%;
+    height: 65px;
+    z-index: 90;
+    padding: 1em 30px  1em 80px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 90;
+    font-family: Open Sans,sans-serif;
+    margin-bottom: 15%;
+  
+}
+nav{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+nav p{
+    padding-left: 25px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+     box-sizing: border-box;
+}
+h3{
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight:800;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    padding-right: 50px;
+    background-color: transparent;
+}
+.innerContainer{
+    display: flex;
+    align-items: center;
+    
+}
+.infoContainer{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    width: 400px;
+    margin-right: 0;
+    justify-content: center;
+    cursor: pointer;
+   }
+   i{
+       position: relative;   
+   }
+   .bell{
+       font-size: 20px;
+   }
+   .notifyNum{
+       position: absolute;
+       top: -15px;
+        left: 15px;
+       padding: 3px 5px;
+       border-radius: 6px;
+       color: white;
+       font-size: 12px;
+       font-weight: 500;
+       background-color:#db5565;
+       font-family: 'Roboto';
+       box-sizing: border-box;
+       display: inline-block;
+   }
+   .AdminName{
+       padding-right: 12px;
+       padding-left: 50px;
+   }
+   .MenuBar{
+       display: none;
+   }
+   .AdminDropDown{
+       display: none;
+       box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
+        border-color: rgb(0, 0, 0);
+        position: absolute;
+        will-change: transform;
+        top:10px;
+        right: -80px;
+        transform: translate3d(12px, 40px, 0px);
+        width: 180px;
+        background-color: white;
+        border-radius: 8px;
+   }
+   .sideBar{
+       position: absolute;
+       background: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -300px;
+    height: 100%;
+    width: 300px;
+    z-index: 92;
+    transition: all linear 0.22s;
+    
+   }
+   .sideBar p{
+           padding: 0 0 24px 14px;
+         text-transform: capitalize;
+        font-family: Open Sans,sans-serif;
+        color: black;
+   }
+    hr{
+        width: 100%;
+        color: #E8EBF2;
+    }
+    .AdminDropDown p{
+    padding:6px 15px;
+	display: block;
+    font-size:16px;
+	margin: 8px 4px;
+	cursor:pointer; 
+    }
+    .AdminDropDown p:hover{
+        background-color: #F8F9FA;
+    }
+   .dropdown{
+       position: relative;
+   }
+   .dropdown:hover .AdminDropDown{
+       display: block;
+   }
+  .linkDesign{
+      text-decoration: none;
+      color: black;
+  }
+   @media (max-width:950px){
+       nav{
+           display: none;
+       }
+       .infoContainer{
+           display: none;
+       }
+       .MenuBar{
+           display: block;
+           cursor: pointer;
+       }
+        .MenuBar:hover .sideBar{
+         display: block;
+    }
+   }

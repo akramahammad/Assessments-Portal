@@ -12,6 +12,10 @@ import classes from './App.module.css'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import PlanPage from './Container/PlanPage/PlanPage';
 import RecordingPage from './Container/RecordingPage/RecordingPage';
+import Classroom from './Container/Classroom/Classroom';
+import ModulesPage from './Container/ModulesPage/ModulePage';
+import Dsa from './Components/Dsa/Dsa';
+
 
 
 class App extends React.Component {
@@ -41,7 +45,10 @@ class App extends React.Component {
                <Route exact path = "/" component ={CardWrapper} />
                <Route exact path = "/CourseStatus" component ={CourseInfoPage} />
                <Route exact path = "/problem" component ={ProblemPage} />
-                <Route excat path="/module/plan/:id" component={PlanPage}/>
+                 <Route exact path="/Classroom" component={Classroom} />
+     <Route exact path="/modules/RB-020420" component={ModulesPage} />
+    <Route exact path="/modules/DSA-130720" component={Dsa} />        
+       <Route excat path="/module/plan/:id" component={PlanPage}/>
                <Route exact path="/module/recording/:id" component={RecordingPage}/>
                 <Route exact path="/curriculam" component={CurriculumPage}/>
                 </Switch>

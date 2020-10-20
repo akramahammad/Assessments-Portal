@@ -1,0 +1,44 @@
+body{
+    background-color: #f2f6ff !important;
+}
+.MainContainer{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 115px;
+}
+
+.Heading{
+    font-weight: 400;
+    font-size: 40px;
+    color: rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
+.SubHeading{
+    margin-top: 1rem;
+    font-family: Roboto,sans-serif;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-left: 2rem;
+}
+
+.CoursesSection{
+    margin:1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CoursesSection>a{
+    margin: 1%;
+    text-decoration: none;
+}
+
+@media(max-width:600px){
+    .MainContainer{
+        width: 80%;
+    }
+    
+}

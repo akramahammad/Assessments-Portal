@@ -1,0 +1,150 @@
+.MainContainer{
+    margin-top: 175px;
+    box-sizing: border-box;
+}
+
+.PageContainer{
+    max-width:900px;
+    box-shadow: 0 0 25px #ccc;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    margin: 30px auto 0 auto;
+    border-radius: 10px;
+    /* overflow: auto; */
+}
+
+.ImageSection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* z-index: 0; */
+}
+
+.BackgroundWrapper{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+.CourseInfo{
+    position: absolute;
+    z-index: 2;
+    margin-left: 50px;
+}
+
+.CourseName div:nth-child(1){
+    font-size: 1.75rem;
+    color: white;
+    letter-spacing: 1.3px;
+    max-width: 500px;
+}
+
+.CourseName div:nth-child(2){
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0096ff;
+    letter-spacing: 1.3px;
+    margin-top: 0.5rem;
+}
+
+.CourseDuration{
+    display: flex;
+    margin-top: 20px;
+}
+
+.Modules{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.ModulesImage{
+    width: 35px;
+    height: 25px;
+    margin-left: 0;
+    opacity: 0.9;
+}
+
+.ClockImage{    
+    width: 25px;
+    height: 25px;
+    margin-left: 0;
+    opacity: 0.9;    
+}
+
+.ModuleCount{
+    display: flex;
+    flex-direction: column;;
+    color: #FFFFFF;
+    height: 100%;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.Progress{
+    margin:8rem 0 2rem 4rem;
+}
+
+.ModulesHeading{
+    font-size: 1.5rem;
+    letter-spacing: 00.5px;
+    color: #000000;
+    opacity: 0.8;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.Scores{
+    display: flex;
+}
+
+.Rank{
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.Rank>div:nth-child(1){
+    margin:5px;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ModulesSection{
+    padding: 28px 0 0 60px;
+}
+
+.ModuleCardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 28px 60px;
+
+}
+
+@media(max-width:600px){
+    .PageContainer{
+        width: 90%;
+    }
+    .MainContainer{
+        margin-top: 200px;
+    }
+    .Progress{
+        margin: 8rem 0 2rem 3rem;
+    }
+    .ModulesSection{
+        text-align: center;
+        margin-top: 10px;
+        padding: 0px;
+    }
+    .ModuleCardWrapper{
+        display: block;
+    }
+}
