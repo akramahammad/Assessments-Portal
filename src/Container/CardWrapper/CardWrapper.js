@@ -3,13 +3,25 @@ import CourseCard from "../../Components/CourseCard/CourseCard.js";
 import classes from "./CardWrapper.module.css";
 import { Link  } from "react-router-dom";
 import axios from 'axios';
-//import TopBar from "../../Components/TopBar/TopBar.js";
-// import Footer from "../../Components/Footer/Footer.js";
 
 class CourseWrapper extends React.Component {
-
+     state={
+          CardData:[]
+     }
+     componentDidMount(){
+  
+          axios.get("https://5ee248988b27f30016094878.mockapi.io/CourseCard")
+            .then(response => {
+                window.localStorage.setItem("myData", JSON.stringify(response.data[0]["CourseData"]))
+                this.setState({CardData:JSON.parse(localStorage.getItem("myData")).ArenaPage})           
+            })
+            .catch(err => {
+              console.log(err)
+            })
+          console.log("helloo")
+     }
      render() {
-          const CardData = JSON.parse(localStorage.getItem("myData")).ArenaPage;
+          const CardData = localStorage.getItem("myData")!=undefined?JSON.parse(localStorage.getItem("myData")).ArenaPage:[];
         console.log(CardData)
         return (
             <div className = {classes.Container}>

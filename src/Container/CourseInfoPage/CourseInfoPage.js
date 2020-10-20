@@ -14,6 +14,13 @@ class CourseInfoPage extends React.Component{
           <>
         <TopBar/>
         <div className  ={classes.OuterDiv}>
+                    <img className = {classes.courseImg} src = {this.props.location.course!=undefined?this.props.location.course.logo:null} alt ={this.props.location.course!=undefined?this.props.location.course.title:null}/>
+                    <div className = {classes.info}>
+                        <p className = {classes.CardHead}>{this.props.location.course!=undefined?this.props.location.course.title:null}</p>
+                        <p className={classes.percent}>0%</p>
+                    <p className = {classes.units}>Avg. Score</p>
+    
+                    </div>  
         {
            topicDiv.map(item => {
             return <SectionStatus id = {item.id} title ={item.title} status ={item.status}/>

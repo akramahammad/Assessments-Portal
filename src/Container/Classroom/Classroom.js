@@ -1,9 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-
-import CourseCard from '../../Components/CourseCard/CourseCard';
-
 import classes from '../Classroom/Classroom.module.css';
+import CardSection from '../../Components/CardSection/CardSection';
 
 
 
@@ -32,14 +30,14 @@ class Classroom extends React.Component {
                 <div className={classes.CoursesSection}>
                     {
                         this.state.classData.map(item =>{
-                            return <CourseCard key={item.id} 
+                            return <CardSection key={item.id} 
                             ThumbnailUrl={item.Thumbnail}  
                             CourseName={item.Title}
                             link={item.link}
                             />  
                         })
                     }
-                                      
+                                    
                 </div>
             </div>
         )

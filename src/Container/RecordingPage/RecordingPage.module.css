@@ -1,7 +1,7 @@
 .RecordingDiv {
     border: 1px solid #DEE2E6;
     width: 85%;
-    margin: 7% auto;
+    margin: 3% auto;
     border-radius: 6px;
     box-shadow: 0 0 4px 1.5px #E3E6EB;
     background-color: #fff;
@@ -19,7 +19,7 @@
 @media(max-width:600px) {
     .RecordingDiv {
         width: 95%;
-        margin-top: 20%;
+        margin-top: 60px;
     }
     .RecordingPlayer {
         max-height: 50vh;

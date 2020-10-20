@@ -9,8 +9,8 @@ const SessionDetails=(props)=>{
             <span>{props.session.description}</span>
             <img className={props.active?classes.ActiveArrow:classes.InactiveArrow} src="https://assessments.edyoda.com/static/images/chevron.svg" alt="dropdown arrow"/>
         </div>
-        <div className={props.active?classes.Link:classes.None}><Link to={{pathname:`/module/plan/${props.session.id}`, session:{...props.session}}}>Session Plan</Link></div>
-        <div className={props.active?classes.Link:classes.None}><Link to={{pathname:`/module/recording/${props.session.id}`,recording:props.session.recording}}>Session Recording</Link></div>
+        <div className={props.active?classes.Link:classes.None}><Link to={{pathname:`/curriculum/plan/${props.session.id}`, session:{...props.session}}}>Session Plan</Link></div>
+        <div className={props.active?classes.Link:classes.None}><Link to={{pathname:`/curriculum/recording/${props.session.id}`,recording:props.session.recording}}>Session Recording</Link></div>
         </div>
     )
 }

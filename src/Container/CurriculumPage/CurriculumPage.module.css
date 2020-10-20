@@ -1,6 +1,6 @@
 .Main {
     width: 65%;
-    margin: 6% auto;
+    margin: 3% auto;
 }
 
 .None {
@@ -175,7 +175,7 @@
 @media(max-width:600px) {
     .Main {
         width: 95%;
-        margin-top: 20%;
+        margin-top: 60px;
     }
     .UnitsMainDiv {
         flex-wrap: wrap;
