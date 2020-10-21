@@ -21,8 +21,8 @@ const TopBar = () => {
                     </nav>
                 </div>
                 <div className = {classes.dropdown}>
-                <Link to = "/"><img className  ={classes.MenuBar} src ="https://assessments.edyoda.com/static/images/burger-svg-icon.svg" alt="menubar"/>
-                   </Link>
+                <img className  ={classes.MenuBar} src ="https://assessments.edyoda.com/static/images/burger-svg-icon.svg" alt="menubar"/>
+                   
                         <div className = {classes.AdminDropDown}>
                         <Link to ="/" className ={classes.linkDesign}>
                             <p>Practice Arena</p> 

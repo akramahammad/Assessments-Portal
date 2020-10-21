@@ -27,7 +27,6 @@ class CourseInfoPage extends React.Component{
            })
            } 
            </div>
-          <Footer/> 
            </>
     
       )
